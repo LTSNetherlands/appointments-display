@@ -66,7 +66,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>04-10-2025</td>
+                    <td>06-10-2025</td>
                     <td>08:30 - 09:00</td>
                     <td>Laptop Replacement</td>
                     <td>INC12345678</td>
@@ -75,7 +75,7 @@
                     <td>m.asfour</td>
                 </tr>
                 <tr>
-                    <td>04-10-2025</td>
+                    <td>06-10-2025</td>
                     <td>09:15 - 09:45</td>
                     <td>Mobile Phone Replacement</td>
                     <td>INC12345679</td>
@@ -84,7 +84,7 @@
                     <td>cheryl.irion</td>
                 </tr>
                 <tr>
-                    <td>04-10-2025</td>
+                    <td>06-10-2025</td>
                     <td>10:00 - 10:30</td>
                     <td>General Support</td>
                     <td>INC12345680</td>
@@ -93,7 +93,7 @@
                     <td>m.asfour</td>
                 </tr>
                 <tr>
-                    <td>04-10-2025</td>
+                    <td>06-10-2025</td>
                     <td>11:00 - 11:30</td>
                     <td>Incident Based</td>
                     <td>INC12345681</td>
@@ -106,9 +106,19 @@
     </div>
 
     <script>
-        // Update timestamp every second
+        // Update timestamp with European format
         function updateTime() {
-            document.getElementById('updateTime').textContent = new Date().toLocaleString();
+            const now = new Date();
+            const options = { 
+                day: '2-digit', 
+                month: '2-digit', 
+                year: 'numeric',
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit',
+                hour12: false
+            };
+            document.getElementById('updateTime').textContent = now.toLocaleDateString('en-GB', options);
         }
         updateTime();
         setInterval(updateTime, 1000);
