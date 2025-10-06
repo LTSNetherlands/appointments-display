@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Today's Appointments</title>
+    <meta http-equiv="refresh" content="30">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: #f5f5f5; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        .header { 
+            background: #a100ff; 
+            color: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+        }
+        th { 
+            background: #f8f8f8; 
+            padding: 12px; 
+            text-align: left; 
+            border-bottom: 2px solid #a100ff; 
+        }
+        td { 
+            padding: 10px; 
+            border-bottom: 1px solid #eee; 
+        }
+        tr:nth-child(even) { 
+            background: #fafafa; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 TODAY'S APPOINTMENTS - TEST</h1>
+            <p>Last updated: <span id="updateTime"></span></p>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>TimeSlot</th>
+                    <th>Appointment Type</th>
+                    <th>IncidentNumber</th>
+                    <th>EnterpriseID</th>
+                    <th>Office</th>
+                    <th>LTS Agent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>04-10-2025</td>
+                    <td>08:30 - 09:00</td>
+                    <td>Laptop Replacement</td>
+                    <td>INC12345678</td>
+                    <td>john.doe</td>
+                    <td>Amsterdam, Gustav Mahlerplein 90</td>
+                    <td>m.asfour</td>
+                </tr>
+                <tr>
+                    <td>04-10-2025</td>
+                    <td>09:15 - 09:45</td>
+                    <td>Mobile Phone Replacement</td>
+                    <td>INC12345679</td>
+                    <td>jane.smith</td>
+                    <td>Amsterdam, Gustav Mahlerplein 90</td>
+                    <td>cheryl.irion</td>
+                </tr>
+                <tr>
+                    <td>04-10-2025</td>
+                    <td>10:00 - 10:30</td>
+                    <td>General Support</td>
+                    <td>INC12345680</td>
+                    <td>bob.johnson</td>
+                    <td>Amsterdam, Gustav Mahlerplein 90</td>
+                    <td>m.asfour</td>
+                </tr>
+                <tr>
+                    <td>04-10-2025</td>
+                    <td>11:00 - 11:30</td>
+                    <td>Incident Based</td>
+                    <td>INC12345681</td>
+                    <td>sarah.wilson</td>
+                    <td>Amsterdam, Gustav Mahlerplein 90</td>
+                    <td>cheryl.irion</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Update timestamp every second
+        function updateTime() {
+            document.getElementById('updateTime').textContent = new Date().toLocaleString();
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
