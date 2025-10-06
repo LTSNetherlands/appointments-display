@@ -1,1 +1,54 @@
-TEST CONTENT
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Today's Appointments</title>
+    <meta http-equiv="refresh" content="30">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: #f5f5f5; 
+        }
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            font-size: 13px;
+        }
+        th { 
+            background: #f8f8f8; 
+            padding: 10px; 
+            text-align: left; 
+            border-bottom: 2px solid #a100ff; 
+            position: sticky;
+            top: 0;
+        }
+        td { 
+            padding: 8px; 
+            border-bottom: 1px solid #eee; 
+        }
+        tr:nth-child(even) { 
+            background: #fafafa; 
+        }
+        tr:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: center; background: #a100ff; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 style="color: white; margin: 0; font-family: Arial, sans-serif;">📅 SCHEDULED APPOINTMENTS FOR TODAY 📅</h2>
+        </div>
+        <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><thead><tr><th style="background: white; color: black; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; border-right: 1px solid #ddd;">Date:</th><th style="background: white; color: black; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; border-right: 1px solid #ddd;">TimeSlot:</th><th style="background: white; color: black; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; border-right: 1px solid #ddd;">Appointment Type:</th><th style="background: white; color: black; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; border-right: 1px solid #ddd;"> IncidentNumber:</th><th style="background: white; color: black; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; border-right: 1px solid #ddd;">EnterpriseID:</th><th style="background: white; color: black; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; border-right: 1px solid #ddd;">Office:</th><th style="background: white; color: black; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; border-right: 1px solid #ddd;">LTSagent:</th></tr></thead><tbody><tr><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">06-10-2025</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">14:00 - 14:30</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">Incident Based</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">INC53094251</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">john.doe</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">Amsterdam, Gustav Mahlerplein 90</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">beytullah.bovatekin</td></tr><tr><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">06-10-2025</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">15:00 - 15:30</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">Incident Based</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">LTS: beytullah.bovatekin</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">jwilliam.doe- INC53094251</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;">Amsterdam, Gustav Mahlerplein 90</td><td style="padding: 14px; border-bottom: 1px solid #eee; border-right: 1px solid #eee; color: #333;"></td></tr></tbody></table>
+    </div>
+</body>
+</html>
