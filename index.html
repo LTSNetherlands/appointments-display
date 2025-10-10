@@ -9,9 +9,9 @@ body { font-family: Arial; margin: 0; padding: 10px; background: #f5f5f5; }
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
 th { background: #f8f8f8; padding: 12px; text-align: left; border-bottom: 2px solid #a100ff; }
 td { padding: 10px; border-bottom: 1px solid #ddd; }
-.past { background: #FFBF00 !important; }
-.upcoming { background: #AFE1AF !important; }
-.current { background: #87CEEB !important; }
+.past { background: #FFA500 !important; } /* Orange for past appointments */
+.upcoming { background: #90EE90 !important; } /* Light green for upcoming */
+.current { background: #87CEEB !important; } /* Sky blue for current */
 tr:hover { background: #f0f0f0 !important; }
 .footer { text-align: center; margin-top: 20px; padding: 15px; color: #666; font-size: 13px; border-top: 1px solid #eee; }
 </style>
@@ -20,7 +20,7 @@ tr:hover { background: #f0f0f0 !important; }
 <div class="container">
 <div class="header">
 <h2 style="color:white;margin:0;font-size:28px">📅 TODAY'S APPOINTMENTS</h2>
-<div style="margin-top:8px;font-size:16px" id="timestamp">10-10-2025 14:20:18</div>
+<div style="margin-top:8px;font-size:16px" id="timestamp">10-10-2025 14:22:46</div>
 </div><table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 <style>
 .past { background: #FFBF00 !important; }
@@ -29,7 +29,7 @@ tr:hover { background: #f0f0f0 !important; }
 table th { background: #f8f8f8; color: #333; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; }
 table td { padding: 14px; border-bottom: 1px solid #eee; }
 table tr:hover { background: #f0f0f0 !important; }
-</style><thead><tr><th>Date:</th><th>TimeSlot:</th><th>Appointment Type:</th><th> IncidentNumber:</th><th>EnterpriseID:</th><th>Office:</th><th>LTSagent:</th></tr></thead><tbody><tr><td>10-10-2025</td><td>13:00 - 13:30</td><td>Incident Based</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent3</td></tr><tr><td>10-10-2025</td><td>14:00 - 14:30</td><td>Mobile Phone Replacement</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent1</td></tr><tr><td>10-10-2025</td><td>15:00 - 15:30</td><td>Laptop Replacement</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent2</td></tr><tr><td>10-10-2025</td><td>10:30 - 11:00</td><td>	Incident Based</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent4</td></tr></tbody></table><div class="footer">Last update: <span id="lastUpdate">14:20:18</span></div>
+</style><thead><tr><th>Date:</th><th>TimeSlot:</th><th>Appointment Type:</th><th> IncidentNumber:</th><th>EnterpriseID:</th><th>Office:</th><th>LTSagent:</th></tr></thead><tbody><tr><td>10-10-2025</td><td>13:00 - 13:30</td><td>Incident Based</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent3</td></tr><tr><td>10-10-2025</td><td>14:00 - 14:30</td><td>Mobile Phone Replacement</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent1</td></tr><tr><td>10-10-2025</td><td>15:00 - 15:30</td><td>Laptop Replacement</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent2</td></tr><tr><td>10-10-2025</td><td>10:30 - 11:00</td><td>	Incident Based</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent4</td></tr></tbody></table><div class="footer">Last update: <span id="lastUpdate">14:22:46</span></div>
 </div>
 <script>
 function updateTime(){
