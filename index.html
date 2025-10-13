@@ -2,10 +2,17 @@
 <html>
 <head>
 <title>Appointments</title>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="timestamp" content="2025-10-13T09:06:05.4929440Z">
+<meta name="timestamp" content="2025-10-13T09:09:45.8759942Z">
+<script>
+// Force immediate refresh when page loads
+if (performance.navigation.type === 2) {
+    // Page was loaded via back/forward - force reload
+    window.location.reload(true);
+}
+</script>
 <style>
 body { font-family: Arial; margin: 0; padding: 10px; background: #f5f5f5; }
 .container { width: 99vw; margin: 0 auto; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
@@ -29,7 +36,7 @@ table tr:hover { background: #f0f0f0 !important; }
 <div class="container">
 <div class="header">
 <h2 style="color:white;margin:0;font-size:28px">📅 TODAY'S APPOINTMENTS</h2>
-<div style="margin-top:8px;font-size:16px" id="timestamp">13-10-2025 09:06:05</div>
+<div style="margin-top:8px;font-size:16px" id="timestamp">13-10-2025 09:09:45</div>
 </div><table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 <style>
 .past { background: #FFBF00 !important; }
@@ -38,13 +45,13 @@ table tr:hover { background: #f0f0f0 !important; }
 table th { background: #f8f8f8; color: #333; padding: 16px; text-align: left; font-weight: bold; border-bottom: 2px solid #a100ff; }
 table td { padding: 14px; border-bottom: 1px solid #eee; }
 table tr:hover { background: #f0f0f0 !important; }
-</style><thead><tr><th>Date:</th><th>TimeSlot:</th><th>Appointment Type:</th><th> IncidentNumber:</th><th>EnterpriseID:</th><th>Office:</th><th>LTSagent:</th></tr></thead><tbody><tr><td>13-10-2025</td><td>10:00 - 10:30</td><td>Incident Based</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent1</td></tr><tr><td>13-10-2025</td><td>12:30 - 13:00</td><td>Laptop Replacement</td><td>INC53554251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent2</td></tr><tr><td>13-10-2025</td><td>14:00 - 14:30</td><td>Mobile Phone Replacement</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent3</td></tr><tr><td>13-10-2025</td><td>15:00 - 15:30</td><td>Incident Based</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent1</td></tr><tr><td>13-10-2025</td><td>16:00 - 16:30</td><td>Laptop Replacement</td><td>INC53554251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent5</td></tr><tr><td>13-10-2025</td><td>16:30 - 17:00</td><td>Laptop Replacement</td><td>INC53554251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent7</td></tr></tbody></table><div class="footer">Last update: <span id="lastUpdate">09:06:05</span> | Auto-refresh: 30s | <span id="cacheID">20251013090605</span></div>
+</style><thead><tr><th>Date:</th><th>TimeSlot:</th><th>Appointment Type:</th><th> IncidentNumber:</th><th>EnterpriseID:</th><th>Office:</th><th>LTSagent:</th></tr></thead><tbody><tr><td>13-10-2025</td><td>10:00 - 10:30</td><td>Incident Based</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent1</td></tr><tr><td>13-10-2025</td><td>12:30 - 13:00</td><td>Laptop Replacement</td><td>INC53554251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent2</td></tr><tr><td>13-10-2025</td><td>14:00 - 14:30</td><td>Mobile Phone Replacement</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent3</td></tr><tr><td>13-10-2025</td><td>15:00 - 15:30</td><td>Incident Based</td><td>INC53094251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent1</td></tr><tr><td>13-10-2025</td><td>16:00 - 16:30</td><td>Laptop Replacement</td><td>INC53554251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent5</td></tr><tr><td>13-10-2025</td><td>16:30 - 17:00</td><td>Laptop Replacement</td><td>INC53554251</td><td>john.doe.test</td><td>Amsterdam</td><td>LTSagent7</td></tr></tbody></table><div class="footer">Last update: <span id="lastUpdate">09:09:45</span></div>
 </div>
 <script>
-// Force refresh every 30 seconds (30000 milliseconds)
+// Force refresh every 1 second (1000 milliseconds)
 setTimeout(function() {
     window.location.reload(true);
-}, 30000);
+}, 1000);
 
 function updateTime(){
     const now = new Date();
